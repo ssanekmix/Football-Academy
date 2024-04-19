@@ -1,0 +1,76 @@
+
+.header{
+    background: url("/assets/images/logo.jpg") no-repeat;
+    background-size: cover;
+    height: 550px;
+}
+.header__container{
+    height: 300px;
+}
+.header__nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 20px;
+}
+.header__logo{
+    margin-right: 50px;
+}
+.header__actions{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.header__list{
+    display: flex;
+    gap: 20px;
+}
+
+.header__phone {
+    margin-left: 30px;
+    color: white;
+}
+#city-select {
+    margin: 0 300px 0 20px;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 10px;
+}
+.header__call {
+    border: 1px solid yellow;
+    border-radius: 30px;
+    background-color: yellow;
+    padding: 10px;
+    font-size: 12px;
+}
+.header__list-item a {
+    color: white;
+    position: relative;
+    font-weight: 600;
+}
+.header__list-item a:hover {
+    color: yellow;
+}
+/* изначально невидим (ширина 0), но может потом анимируется для изменения своей ширины */
+.header__list-item a::after {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: yellow;
+    content: "";
+    transition: width 0.3s ease-out;
+}
+/* то самое изменение ширины до 100% от блока с ссылкой */
+.header__list-item a:hover::after, .header__list-item a:focus::after {
+    width: 100%;
+}
+#header__span {
+    color: yellow;
+}
+.header__nav option {
+    color: black;
+    background-color: white;
+}

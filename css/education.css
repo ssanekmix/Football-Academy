@@ -1,0 +1,71 @@
+.education{
+    height: 550px;
+    margin: 30px 0;
+}
+.education__advantage{
+    margin: 30px 0;
+    display: flex;
+    font-weight: 600;
+}
+.education__advantage img {
+    width: 30px;
+    height: 30px;
+}
+.education__advantage p {
+    margin: 20px 0;
+}
+.education__advantage-item{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+.education__description{
+    display: flex;
+}
+.education__status{
+    text-align: center;
+    font-weight: 600;
+    padding: 0 20px;
+}
+.education__status span {
+    color: rgb(120, 120, 237);
+    text-transform: uppercase;
+}
+.education-span1 {
+    font-size: 70px;
+}
+.education-span2 {
+    font-size: 50px;
+}
+.education__text{
+    margin: 0 25px;
+    text-align: justify;
+}
+.education__text span {
+    font-weight: 600;
+}
+.education__text p {
+    margin: 12px;
+}
+
+.education__video p {
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(120, 120, 237);
+    margin-top: 10px;
+    margin: 10px 20px 0 0;
+}
+.education__container h2 {
+    text-align: center;
+}
+.education__container h2 span {
+    text-transform: uppercase;
+    color: rgb(120, 120, 237);
+}
+.education__video img {
+    width: 120px;
+    height: 120px;
+}

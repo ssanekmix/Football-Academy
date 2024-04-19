@@ -1,0 +1,86 @@
+.groups{
+    height: 550px;
+    background-color: rgb(197, 197, 197);
+}
+.groups__container{
+    color: white;
+}
+.groups__container button {
+    border: 2px solid yellow;
+    border-radius: 30px;
+    background-color: transparent;
+    color: yellow;
+    padding: 8px 25px;
+}
+.groups__container button:hover {
+    background-color: yellow;
+    color: black;
+}
+.groups__container span {
+    color: yellow;
+    font-size: 25px;
+    font-weight: 600;
+}
+.groups__container strong {
+    font-weight: 600;
+}
+.groups__container img {
+    width: 300px;
+    height: 300px;
+}
+.groups__container h2 {
+    text-align: center;
+    padding: 20px 0;
+    color: black;
+}
+.groups__line1 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.groups__line2 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.groups-item {
+    position: relative; /* Устанавливаем относительное позиционирование для контейнера элемента */
+    width: 350px; /* Пример ширины, адаптируйте под свои нужды */
+    height: 350px; /* Пример высоты, адаптируйте под свои нужды */
+} 
+.groups-item img {
+    width: 100%; /* Изображение занимает всю ширину контейнера */
+    height: 100%; /* Изображение занимает всю высоту контейнера */
+    object-fit: cover; /* Изображение масштабируется так, чтобы его пропорции сохранялись, а область видимости контейнера заполнялась */
+}
+.groups-item p{
+    position: absolute; /* Позиционируем текст и кнопку абсолютно относительно контейнера */
+    top: 10px; /* Расположение снизу контейнера */
+    left: 10px; /* Расположение слева от контейнера */
+    color: white; /* Цвет текста */
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон для текста и кнопки */
+    padding: 5px; /* Отступы внутри текста и кнопки */
+}
+.groups-item p:nth-of-type(1) {
+    text-align: center; 
+}
+.groups-item p:nth-of-type(2) {
+    top: 50%;
+    left: 50%;
+    /* left: 50%; и top: 50%; смещают элемент так, чтобы его верхний левый угол был в центре родительского элемента.
+    transform: translate(-50%, -50%); затем смещает элемент обратно на 50% его собственной ширины влево и на 50% его собственной высоты вверх, что приводит к тому, что центр элемента теперь совпадает с центром родительского элемента. */
+    transform: translate(-50%, -50%);
+}
+.groups-item button {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: transparent; 
+    color: yellow; 
+    border: 2px solid yellow; 
+    cursor: pointer;
+}
+.groups-item img:hover {
+    outline: 2px solid yellow;
+}
