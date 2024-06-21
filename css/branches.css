@@ -1,0 +1,112 @@
+.branches{
+    background-color: rgb(233, 233, 233);
+    background: url('../assets/images/branch_bg.jpg') no-repeat;
+    background-size: cover;
+    height: 550px;
+    overflow: hidden;
+}
+.branches__container h3 {
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+}
+.branches-item{
+    border: 1px solid blue;
+    width: 220px;
+    margin: 10px;
+    position: relative;
+    left: 220px;
+    padding: 15px;
+    cursor: pointer;
+    background-color: rgb(250, 243, 243);
+}
+.branches-item span {
+    font-weight: 600;
+}
+.branches-item:hover {
+    background-color: yellow;
+    border: 1px solid yellow;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3)
+}
+.branches-item:hover::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -69px;
+    border-width: 35px;
+    border-style: solid;
+    border-color: transparent transparent transparent yellow;
+    transform: translateY(-50%);
+}
+.branches__container iframe {
+    height: 410px;
+    width: 750px;
+    position: relative;
+    top: -320px;
+    left: 575px;
+    display: none;
+}
+.branches__container iframe:nth-of-type(1) {
+    display: block;
+}
+@media (min-width: 1020px) {
+    .branches__container iframe {
+        left: calc(50% - 375px + 110px + 20px);
+    }
+    .branches-item {
+        left: calc(50% - 375px + 110px - 50px - 220px + 20px);
+    }
+}
+@media (max-width: 1020px) {
+    .branches__container iframe {
+        height: 310px;
+        width: 550px;
+        left: calc(50% - 275px + 80px + 20px);
+        top: -377px;
+    }
+    .branches-item{
+        width: 160px;
+        left: calc(50% - 275px + 80px - 50px - 160px + 20px);
+    }
+    .branches-item:hover::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-width: 0;
+        border-style: solid;
+        border-color: transparent transparent transparent yellow;
+        transform: translateY(0);
+    }
+}
+@media (max-width: 760px) {
+    .branches__container iframe {
+        height: 310px;
+        width: 350px;
+        left: calc(50% - 175px + 80px + 10px);
+        top: -377px;
+    }
+    .branches-item{
+        left: calc(50% - 175px + 80px - 10px - 160px - 10px);
+    }
+}
+@media (max-width: 550px) {
+    .branches__container iframe {
+        position: relative;
+        height: 250px;
+        width: 350px;
+        top: 10px;
+        left: 0;
+    }
+    .branches-item {
+        width: 40%;
+        margin: 10px;
+        padding: 15px;
+        left: 1px;
+    }
+    .branches__items {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+}

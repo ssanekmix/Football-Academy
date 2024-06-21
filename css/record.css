@@ -1,19 +1,21 @@
-
+.record {
+    overflow: hidden;
+}
 .record__container{
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     padding-top: 35px;
+    width: 100vw;
 }
-
 .record__interaction input {
     display: inline-block;
     margin-right: 10px;
     border: 1px solid white;
     border-radius: 20px;
     padding: 10px;
-    padding-left: 15px;
+    padding-left: 15px; 
 }
 .record__interaction button {
     display: block;
@@ -63,4 +65,53 @@
     height: 30px;
     width: 30px;
 }
+@media (max-width: 629px) {
+    .record__text h1 {
+        font-size: 50px;
+    }
+    .record__text h2 {
+        font-size: 35px;
+    }
+}
+@media (max-width: 524px) {
+    .record__text h1 {
+        font-size: 40px;
+    }
+    .record__text h2 {
+        font-size: 30px;
+    }
+}
+@media (max-width: 420px) {
+    .record__text h1 {
+        font-size: 30px;
+    }
+    .record__text h2 {
+        font-size: 20px;
+    }
+    .record__interaction input {
+        display: block;
+        margin: 5px auto;
+
+    }
+    .record__share p {
+        width: 70vw;
+        margin: 0 15vw;
+    }
+    .record__share {
+        display: block;
+        margin: 0 auto;
+    }
+    .record__share a {
+        position: relative;
+        left: 33vw;
+    }
+}
+@media (max-width: 314px) {
+    .record__text h1 {
+        font-size: 25px;
+    }
+}
+
+
+
 

@@ -1,0 +1,52 @@
+.ticket{
+    text-align: center;
+    height: 450px;
+}
+.ticket__container h2 {
+    padding: 20px;
+}
+.ticket-item{
+    display: inline-block;
+    border: 2px solid rgb(120, 120, 237);
+    margin: 0 10px;
+    transition: box-shadow 0.2s ease-in-out; 
+    /* плавно изменяем состояние элемента */
+}
+.ticket__head{
+    background-color: rgb(120, 120, 237);
+    color: white;
+    padding: 15px;  
+}
+.ticket__body{
+    padding: 10px;
+}
+.ticket__body li {
+    margin: 10px;
+}
+.ticket__body p {
+    margin-top: 15px;
+    font-weight: 600;
+    color: rgb(120, 120, 237);
+    text-transform: uppercase;
+}
+.ticket__body button {
+    background-color: yellow;
+    border-radius: 30px;
+    padding: 15px 20px;
+    margin: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.ticket-item:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+    /* смещение по х, y и радиус размытия 15px */
+}
+
+@media (max-width: 672px) {
+    .ticket{
+        height: 774px;
+    }
+    .ticket-item{
+        margin: 10px 10px;
+    } 
+} 
